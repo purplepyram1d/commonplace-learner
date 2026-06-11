@@ -1,0 +1,68 @@
+window.COMMONPLACE_DECK_REGISTRY = window.COMMONPLACE_DECK_REGISTRY || {};
+window.COMMONPLACE_DECK_REGISTRY.coae = {
+  title: "HTB COAE — AI Red Team Concepts",
+  description: "Core vocabulary for the HTB Certified Offensive AI Expert cert. Covers prompt injection, output exploitation, data attacks, adversarial ML, AI privacy attacks, and pipeline security.",
+  label: "COAE",
+  shortLabel: "AI Red Team",
+  cards: [
+    // ── LLM Exploitation ──
+    { term: "Direct Prompt Injection", definition: "Attacker inputs a malicious prompt directly into the LLM interface to override system instructions or extract data. The attacker controls the user turn." },
+    { term: "Indirect Prompt Injection", definition: "Malicious instructions embedded in external content the model retrieves — a document, webpage, or tool output — causing the model to execute attacker instructions without user knowledge." },
+    { term: "System Prompt Leakage", definition: "Extracting the hidden system prompt through crafted user queries. Often achieved by asking the model to repeat its instructions or ignore prior constraints." },
+    { term: "Context Override", definition: "A prompt injection technique that causes the model to treat attacker-supplied context as higher priority than the system prompt." },
+    { term: "Instruction Hijacking", definition: "Embedding instructions in retrieved content that override the original task — e.g., a poisoned RAG document that redirects model behavior." },
+    { term: "Jailbreaking", definition: "Techniques that cause a model to bypass its alignment constraints and produce restricted output. Often relies on roleplay framing, hypothetical scenarios, or encoding tricks." },
+    { term: "Multi-Stage Injection", definition: "A prompt injection that doesn't fire immediately — it plants instructions in the model's context window that activate on a subsequent turn or tool call." },
+    { term: "RAG Poisoning", definition: "Injecting malicious content into a Retrieval-Augmented Generation knowledge base so the model retrieves and acts on attacker instructions when answering queries." },
+    { term: "Prompt Leaking", definition: "Extracting confidential information — system prompts, prior conversation context, or injected secrets — by manipulating how the model reflects its own context." },
+    // ── Output-Based Exploitation ──
+    { term: "Output-Based Exploitation", definition: "The class of attacks where LLM output becomes application input — feeding into web renderers, SQL queries, command execution, or APIs. Burp Suite skills transfer directly here." },
+    { term: "LLM → Web Output", definition: "When a model's response is rendered as HTML, an attacker crafting the model's output can inject XSS or modify page behavior." },
+    { term: "LLM → SQL Query", definition: "When a model constructs database queries from natural language, injected instructions can manipulate the query to extract or modify data." },
+    { term: "LLM → Command Execution", definition: "When model output is passed to a shell or subprocess. Injected content can achieve RCE if output is not sanitized before execution." },
+    { term: "Rogue Model Action", definition: "An agentic AI that takes actions (calls APIs, browses, writes files) is manipulated via injection to perform actions the attacker intends rather than the user intends." },
+    { term: "MCP-Style Vulnerability", definition: "Vulnerabilities in LLM orchestration or model context protocol frameworks — the infrastructure connecting the model to tools and data sources — enabling exploitation of the pipeline, not the model." },
+    // ── Data Attacks ──
+    { term: "Data Poisoning", definition: "Corrupting training data so a model learns incorrect patterns, installs backdoors, or behaves adversarially on specific inputs." },
+    { term: "Label Flipping", definition: "A data poisoning attack that swaps correct labels for incorrect ones in the training set, causing the model to misclassify specific inputs." },
+    { term: "Clean-Label Poisoning", definition: "Poison samples that have correct labels but are crafted to cause misclassification of specific target inputs at inference time. Hard to detect because labels look legitimate." },
+    { term: "Trojan Insertion", definition: "Embedding a backdoor trigger into training data. The model behaves correctly on clean inputs but produces attacker-defined output when the trigger is present." },
+    { term: "Tensor Steganography", definition: "Hiding malicious data inside model weights or tensors — a covert channel for exfiltrating information or hiding backdoors in the model artifact itself." },
+    { term: "Backdoor Trigger", definition: "A specific pattern (pixel patch, token, phrase) that activates a trojan planted via data poisoning. The model responds normally to all other inputs." },
+    // ── Adversarial ML ──
+    { term: "Adversarial Example", definition: "An input crafted with small, often imperceptible perturbations that cause a model to misclassify it. The human sees one thing; the model sees another." },
+    { term: "First-Order Attack (FGSM)", definition: "Fast Gradient Sign Method — uses the gradient of the loss function to add perturbations in the direction that maximally increases loss. Fastest adversarial example generation." },
+    { term: "Gradient-Based Attack", definition: "Any adversarial attack that uses backpropagation gradients to find optimal perturbations. Requires white-box (model access) or a surrogate model." },
+    { term: "Evasion Attack", definition: "Modifying an input at inference time to cause misclassification — the model is already trained, and the attacker manipulates input only. Distinct from poisoning (training time)." },
+    { term: "Sparsity Attack", definition: "An adversarial attack that modifies only a small number of features (sparse perturbation) rather than all features, making evasion harder to detect." },
+    { term: "White-Box Attack", definition: "Adversarial attack where the attacker has full access to model architecture, weights, and gradients. Strongest attack setting." },
+    { term: "Black-Box Attack", definition: "Adversarial attack with no model access — only input/output queries. Uses surrogate models or transfer attacks." },
+    { term: "Transferability", definition: "Adversarial examples crafted against one model often fool different models with similar architectures. Enables black-box attacks via surrogate models." },
+    { term: "Overfitting (Security Risk)", definition: "An overfit model memorizes training data. Risk: membership inference attacks can reconstruct training samples. Security framing: overfitting → data memorization → privacy leakage." },
+    { term: "L1 Regularization (Lasso)", definition: "Drives less important feature weights to exactly zero. Produces sparse models. From a security angle: reduces attack surface via feature elimination." },
+    { term: "L2 Regularization (Ridge)", definition: "Shrinks weights toward zero without eliminating them. Reduces overfitting and data memorization risk." },
+    // ── AI Privacy Attacks ──
+    { term: "Membership Inference Attack", definition: "Determining whether a specific data point was in the training set by querying the model. Enables reconstruction of private training data." },
+    { term: "Model Inversion Attack", definition: "Reconstructing training data (faces, records) from a model's predictions. Attacks the privacy of data used to train the model." },
+    { term: "Data Leakage via Model", definition: "Models trained on sensitive data can leak that data through their outputs, memorized sequences, or embedding distances." },
+    { term: "Differential Privacy", definition: "Adding calibrated noise to training data or gradients so individual records cannot be recovered. Mitigation for membership inference and model inversion." },
+    // ── Anomaly Detection ──
+    { term: "Point Anomaly", definition: "A single data point that clearly doesn't belong — e.g., one login from an unexpected country when all others are domestic." },
+    { term: "Contextual Anomaly", definition: "A value that is normal in one context but suspicious in another — e.g., 3AM login is normal for a night-shift engineer, suspicious for a corporate accountant." },
+    { term: "Collective Anomaly", definition: "Individual actions look normal but together form a suspicious pattern — e.g., 500 login attempts from distributed IPs is an attack even though each attempt alone is benign." },
+    { term: "Isolation Forest", definition: "Anomaly detection algorithm: anomalies are rare and different, so they're isolated with fewer splits. Fewer splits to isolate = more suspicious. Fast, scales well." },
+    { term: "Local Outlier Factor (LOF)", definition: "Anomaly detection that compares density of a point's neighborhood. Low density compared to neighbors = anomaly. Handles datasets with varying density regions." },
+    { term: "One-Class SVM", definition: "Draws a boundary around normal data. Anything outside the boundary is flagged as anomalous. Can model non-linear decision boundaries." },
+    { term: "Baseline Drift (Adversarial)", definition: "Attackers who understand the detection baseline can operate just inside it — slow exfiltration, low-and-slow scanning, distributed login attempts — evading anomaly detection." },
+    // ── AI Pipeline Weak Points ──
+    { term: "AI Pipeline Attack Surface", definition: "The infrastructure around the model: input preprocessing, model inference API, output handling, logging, storage, and orchestration layer. Usually more exploitable than the model itself." },
+    { term: "Input Preprocessing Attack", definition: "Exploiting how data is cleaned, tokenized, or formatted before reaching the model. Injection may survive preprocessing if sanitization is incomplete." },
+    { term: "Inference API Attack", definition: "Direct attacks against the model serving endpoint — parameter tampering, endpoint enumeration, or abusing rate limits and error responses for model reconnaissance." },
+    { term: "Output Handling Vulnerability", definition: "The gap between what the model outputs and how the application handles it. Unsanitized output fed to rendering, query, or execution layers is the primary output exploitation vector." },
+    { term: "Guardrail Bypass", definition: "Techniques that cause a model's safety filters or content classifiers to fail — often via encoding, language switching, role framing, or injection that reaches the model before guardrails execute." },
+    { term: "AI Defense: Adversarial Training", definition: "Including adversarial examples in the training set so the model learns to classify them correctly. Improves robustness but is an arms race — new attack types may still evade." },
+    // ── Reporting ──
+    { term: "COAE Finding Format", definition: "Finding / Impact / Evidence / Remediation. The four-field structure required in the 7-day exam report. Reporting quality is where candidates fail, not technical work." },
+    { term: "Risk Mapping Format", definition: "Concept → Security Risk → Possible Attack. Used to tie every AI/ML concept to an adversarial use case. Example: Overfitting → Data memorization → Membership inference." },
+  ],
+};

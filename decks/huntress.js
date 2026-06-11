@@ -1,0 +1,46 @@
+window.COMMONPLACE_DECK_REGISTRY = window.COMMONPLACE_DECK_REGISTRY || {};
+window.COMMONPLACE_DECK_REGISTRY.huntress = {
+  title: "Huntress — EDR, RMM & MSP Security",
+  description: "Vocabulary for Huntress-aligned SOC roles. Covers RMM abuse TTPs, EDR detection models, MSP threat landscape, and Huntress product concepts.",
+  label: "Huntress / EDR",
+  shortLabel: "Huntress / EDR",
+  cards: [
+    // ── RMM Abuse TTPs ──
+    { term: "LOLRMM", definition: "Living Off the Land RMM — abusing legitimate remote management software (AnyDesk, ScreenConnect, Atera) instead of deploying custom malware. Binaries are signed and trusted; EDR typically whitelists them." },
+    { term: "Daisy-Chaining RMMs", definition: "Installing multiple RMM tools sequentially: RMM A installs RMM B, which installs RMM C. Creates redundant persistence, fragments telemetry across tools, and complicates containment." },
+    { term: "Hands-on-Keyboard (HOK) Access", definition: "Interactive, real-time attacker presence inside a victim environment via RMM. Attacker can browse files, run commands, and pivot — all through legitimate-looking remote access traffic." },
+    { term: "RMM Fingerprinting", definition: "Documenting approved RMM tools by executable hash and expected C2 domain. Any RMM process or connection outside these baselines is an indicator of compromise." },
+    { term: "BYOVD", definition: "Bring Your Own Vulnerable Driver — attacker drops a legitimate but vulnerable driver to achieve kernel-level code execution, bypassing EDR. Used in Tiflux campaign via HwRwDrv.x64." },
+    { term: "Telemetry Fragmentation", definition: "When multiple RMMs are installed, each generates logs in its own format across different platforms. Makes correlation harder and increases analyst workload during IR." },
+    { term: "SAS Suppression", definition: "Suppressing the Secure Attention Sequence (Ctrl+Alt+Del) to hide remote desktop sessions from the logged-in user. Used in RMM campaigns to conceal attacker presence." },
+    { term: "RMM in Safe Mode", definition: "Registry modifications that configure VNC or RMM agents to start in Safe Mode — ensures attacker maintains access even when the victim reboots for incident response." },
+    { term: "Trial-Tier RMM Abuse", definition: "Attackers use free or trial RMM accounts to avoid paying for infrastructure and to reduce attribution. The tools are still fully functional for persistent access." },
+    { term: "Approval Status vs Trust", definition: "Core Huntress concept: a signed RMM binary being approved does not mean a specific RMM session is legitimate. Behavior monitoring — not presence — is the correct detection model." },
+    { term: "RMM Multiplicity Indicator", definition: "Finding two or more RMM tools simultaneously on an endpoint is a high-confidence incident indicator. One may be legitimate; two or more is almost never accidental in MSP environments." },
+    { term: "MSP Supply Chain Risk", definition: "Compromising an MSP's RMM platform gives the attacker access to all client environments that MSP manages. One credential = hundreds of organizations." },
+    { term: "Tiflux Campaign (May 2026)", definition: "First documented weaponization of Tiflux (Brazil-developed RMM). Chain: phishing email → CloudFlare CAPTCHA → malicious MSI → Tiflux → UltraVNC → Splashtop → ScreenConnect + vulnerable driver + SSH keys." },
+    { term: "osqueryl.exe (Attacker Use)", definition: "Open-source endpoint visibility tool repurposed by attackers for system profiling during post-exploitation. Dropped alongside RMM tools in the Tiflux campaign." },
+    // ── EDR Detection ──
+    { term: "Signature-Based Detection", definition: "Matching files or processes against a database of known malicious hashes or patterns. Fast and precise for known threats; blind to novel malware or signed malicious tools." },
+    { term: "Behavioral Detection", definition: "Identifying malicious activity by what a process does — network connections it makes, files it touches, child processes it spawns — rather than what it is. Catches novel threats and LOLBins." },
+    { term: "EDR Agent", definition: "Software deployed on an endpoint that collects telemetry (process events, file events, network connections, registry changes) and enforces response actions like process kill or host isolation." },
+    { term: "Endpoint Telemetry", definition: "Raw event data streamed from EDR agents: process creation, file writes, network connections, registry modifications, authentication events. Foundation of all behavioral detection." },
+    { term: "LOLBin (Living Off the Land Binary)", definition: "Abusing legitimate Windows binaries (certutil, mshta, wscript, powershell) to execute attacker code. Evades signature detection because the binary itself is trusted." },
+    { term: "ITDR", definition: "Identity Threat Detection and Response — detecting attacks targeting identity infrastructure: credential theft, pass-the-hash, Kerberoasting, Golden Ticket, account takeover." },
+    { term: "Managed Detection and Response (MDR)", definition: "A service where a security vendor's SOC monitors a customer's environment 24/7. Huntress provides MDR to MSPs — the Huntress ThreatOps team triages alerts on behalf of partners." },
+    { term: "ThreatOps Model", definition: "Huntress's human-in-the-loop SOC layer on top of EDR. Automated detection + human analyst review before an alert is surfaced to the MSP. Reduces noise and catches what automated rules miss." },
+    { term: "Host Isolation (EDR)", definition: "Cutting an endpoint's network connectivity while preserving management-plane access for investigation. Standard first containment action on confirmed compromise." },
+    { term: "Process Injection", definition: "Technique where attacker code runs inside a legitimate process (e.g., svchost.exe) to evade detection. EDR behavioral rules look for cross-process memory writes and suspicious handle opens." },
+    // ── Huntress Product Suite ──
+    { term: "Huntress EDR", definition: "Endpoint detection agent deployed on Windows/Mac endpoints. Collects telemetry, detects malicious activity, and enables host isolation. Feeds into ThreatOps for human triage." },
+    { term: "Managed SIEM (Huntress)", definition: "Log aggregation and correlation service managed by Huntress. Ingests logs from endpoints, firewalls, and identity providers for broader visibility beyond endpoint telemetry." },
+    { term: "Security Awareness Training (SAT)", definition: "Phishing simulation and security education platform. Huntress acquired SAT capability to address the human vector — the entry point for most RMM abuse campaigns." },
+    { term: "CISA RMM Advisory (2023)", definition: "CISA and NSA warning that threat actors are using legitimate RMM software for malicious purposes, specifically citing phishing as the delivery mechanism into MSP environments." },
+    { term: "277% YoY Increase", definition: "Huntress-reported year-over-year increase in RMM abuse incidents. Used to establish the scale of the threat when discussing RMM attack TTPs in blogs or interviews." },
+    // ── MSP Business Context ──
+    { term: "MSP (Managed Service Provider)", definition: "A company that manages IT infrastructure for small and medium businesses under a recurring contract. MSPs use RMM tools to remotely manage all client endpoints — making them high-value targets." },
+    { term: "RMM Platform", definition: "Software used by MSPs to remotely monitor and manage client endpoints. Examples: ConnectWise Automate, Kaseya VSA, NinjaRMM, Datto RMM, Atera, Syncro." },
+    { term: "PSA (Professional Services Automation)", definition: "Ticketing and billing platform used alongside RMM in MSP operations. Examples: ConnectWise Manage, Autotask, HaloPSA. Compromise of PSA can expose all client billing and contact data." },
+    { term: "Huntress Partner Model", definition: "Huntress sells exclusively through MSPs, not direct to end customers. The MSP is the customer; their SMB clients are the protected endpoints. Huntress's value prop is protecting the MSP and all their clients." },
+  ],
+};

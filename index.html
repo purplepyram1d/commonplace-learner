@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commonplace Learner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <h1>Commonplace Learner</h1>
+      <p class="lede">
+        Clean and speed-read pasted text with a focused reader, then switch into built-in
+        flashcard study decks for cybersecurity, PowerShell, Linux, Python, and SOC analyst prep.
+      </p>
+    </header>
+
+    <div class="workspace-switch" role="tablist" aria-label="Commonplace tools">
+      <button
+        id="reader-workspace-btn"
+        class="workspace-tab workspace-tab-active"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="reader-workspace"
+      >
+        Reader
+      </button>
+      <button
+        id="flashcards-workspace-btn"
+        class="workspace-tab"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="flashcards-workspace"
+      >
+        Flashcards
+      </button>
+    </div>
+
+    <main>
+      <section
+        id="reader-workspace"
+        class="workspace-panel workspace-panel-active"
+        role="tabpanel"
+        aria-labelledby="reader-workspace-btn"
+      >
+        <div class="layout">
+          <section class="panel input-panel">
+            <div class="section-heading">
+              <h2>Source Text</h2>
+              <button id="clean-btn" class="secondary-button" type="button">Clean Text</button>
+            </div>
+
+            <label class="field-label" for="source-text">Paste article or passage</label>
+            <textarea id="source-text" spellcheck="false" placeholder="Paste your text here..."></textarea>
+
+            <div class="status-row">
+              <p id="clean-status" class="muted" aria-live="polite">Ready to prepare text.</p>
+              <button id="load-btn" class="primary-button" type="button">Load Into Reader</button>
+            </div>
+          </section>
+
+          <section class="panel control-panel">
+            <div class="section-heading">
+              <h2>Reading Controls</h2>
+            </div>
+
+            <div class="control-grid">
+              <label class="control-card" for="reading-mode">
+                <span>Reading Mode</span>
+                <select id="reading-mode">
+                  <option value="chunk">Chunk Reader</option>
+                  <option value="typewriter">Typewriter Mode</option>
+                </select>
+                <strong id="reading-mode-value">Chunk Reader</strong>
+              </label>
+
+              <label class="control-card" for="chunk-size">
+                <span id="chunk-size-label">Base Words at a Time</span>
+                <input id="chunk-size" type="range" min="1" max="8" value="2">
+                <strong id="chunk-size-value">2</strong>
+              </label>
+
+              <label class="control-card" for="wpm">
+                <span>Words Per Minute</span>
+                <input id="wpm" type="range" min="100" max="900" step="10" value="300">
+                <strong id="wpm-value">300</strong>
+              </label>
+            </div>
+
+            <div class="action-row">
+              <button id="start-btn" class="primary-button" type="button">Start</button>
+              <button id="pause-btn" class="secondary-button" type="button">Pause</button>
+              <button id="reset-btn" class="secondary-button" type="button">Reset</button>
+            </div>
+
+            <div class="meta-grid">
+              <div>
+                <span class="meta-label">Prepared Words</span>
+                <strong id="word-count">0</strong>
+              </div>
+              <div>
+                <span class="meta-label">Progress</span>
+                <strong id="progress-text">0 / 0</strong>
+              </div>
+              <div>
+                <span class="meta-label">Estimated Time</span>
+                <strong id="duration-text">0s</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel reader-panel">
+            <div class="reader-frame">
+              <div class="reader-header">
+                <p class="reader-label">Reading Window</p>
+                <button id="reader-fullscreen-btn" class="secondary-button" type="button">Fullscreen</button>
+              </div>
+              <div id="reader-display" class="reader-display" aria-live="polite">Awaiting text</div>
+              <div class="reader-controls">
+                <button id="reader-toggle-btn" class="secondary-button reader-toggle-button" type="button">Play</button>
+              </div>
+              <div class="reader-progress">
+                <div id="progress-bar" class="reader-progress-bar"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section
+        id="flashcards-workspace"
+        class="workspace-panel"
+        role="tabpanel"
+        aria-labelledby="flashcards-workspace-btn"
+      >
+        <div class="flashcards-layout">
+          <section class="panel flashcards-main-panel">
+            <div class="section-heading">
+              <h2 id="flashcard-deck-title">Cybersecurity Vocabulary Deck</h2>
+              <button id="flashcards-fullscreen-btn" class="secondary-button" type="button">Fullscreen</button>
+            </div>
+
+            <p id="flashcard-deck-description" class="lede flashcards-lede">
+              A starter deck of entry-level analyst terms covering network defense, incident
+              handling, identity, and common attack concepts.
+            </p>
+
+            <div class="flashcard-stage">
+              <div class="flashcard-header">
+                <p id="flashcard-deck-label" class="reader-label">Foundational Deck</p>
+                <strong id="flashcard-progress" class="flashcard-progress">1 / 150</strong>
+              </div>
+
+              <article id="flashcard-card" class="flashcard-card">
+                <p id="flashcard-face-label" class="flashcard-face-label">Term</p>
+                <h3 id="flashcard-term" class="flashcard-term">CIA Triad</h3>
+                <p id="flashcard-definition" class="flashcard-definition flashcard-definition-hidden">
+                  The principle that security work protects confidentiality, integrity, and availability.
+                </p>
+              </article>
+
+              <p id="flashcard-status" class="muted flashcard-status" aria-live="polite">
+                Brainwash mode is ready.
+              </p>
+
+              <div class="action-row flashcard-actions">
+                <button id="flashcard-start-btn" class="primary-button" type="button">Start Session</button>
+                <button id="flashcard-restart-btn" class="secondary-button" type="button">Restart Session</button>
+                <button id="flashcard-pause-btn" class="secondary-button" type="button">Pause</button>
+                <button id="flashcard-reveal-btn" class="secondary-button flashcard-quiz-control" type="button">Reveal</button>
+                <button id="flashcard-prev-btn" class="secondary-button" type="button">Previous</button>
+                <button id="flashcard-next-btn" class="secondary-button" type="button">Next</button>
+                <button id="flashcard-shuffle-btn" class="secondary-button" type="button">Shuffle</button>
+              </div>
+
+              <div class="action-row flashcard-quiz-actions" id="flashcard-quiz-actions">
+                <button id="flashcard-right-btn" class="primary-button" type="button">Got It Right</button>
+                <button id="flashcard-wrong-btn" class="secondary-button" type="button">Missed It</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel flashcards-side-panel">
+            <div class="section-heading">
+              <h2>Study Controls</h2>
+            </div>
+
+            <div class="control-grid">
+              <label class="control-card" for="flashcard-deck">
+                <span>Deck</span>
+                <select id="flashcard-deck">
+                  <option value="random">Random Mix</option>
+                  <option value="currentphase">⚡ Current Phase (6/11–7/7)</option>
+                  <option value="cybersecurity">Cybersecurity Essentials</option>
+                  <option value="cybersecurity-advanced">Advanced Cybersecurity</option>
+                  <option value="bugbounty">Bug Bounty</option>
+                  <option value="redteam">Red Team</option>
+                  <option value="blueteam">Blue Team</option>
+                  <option value="activedirectory">Active Directory</option>
+                  <option value="azure">Azure Security</option>
+                  <option value="ai102">Azure AI-102</option>
+                  <option value="aws">AWS Security</option>
+                  <option value="powershell">PowerShell Essentials</option>
+                  <option value="linux">Linux CLI / Bash</option>
+                  <option value="soc">SOC Analyst Readiness</option>
+                  <option value="python">Python 101</option>
+                  <option value="coae">COAE — AI Red Team</option>
+                  <option value="huntress">Huntress / EDR / RMM</option>
+                </select>
+              </label>
+
+              <label class="control-card flashcard-random-control" for="random-mix-source">
+                <span>Random Mix Source</span>
+                <select id="random-mix-source">
+                  <option value="all">All Cards</option>
+                  <option value="weak">Weak Cards</option>
+                </select>
+              </label>
+
+              <label class="control-card" for="flashcard-mode">
+                <span>Study Mode</span>
+                <select id="flashcard-mode">
+                  <option value="brainwash">Brainwash</option>
+                  <option value="quiz">Quiz</option>
+                </select>
+              </label>
+
+              <label class="control-card flashcard-brainwash-control" for="brainwash-order">
+                <span>Brainwash Order</span>
+                <select id="brainwash-order">
+                  <option value="term-first">Term then Definition</option>
+                  <option value="definition-first">Definition then Term</option>
+                </select>
+              </label>
+
+              <label class="control-card flashcard-brainwash-control" for="brainwash-display-mode">
+                <span>Brainwash Display</span>
+                <select id="brainwash-display-mode">
+                  <option value="full">Show All at Once</option>
+                  <option value="typewriter">Typewriter</option>
+                </select>
+              </label>
+
+              <label class="control-card flashcard-brainwash-control" for="brainwash-term-speed">
+                <span>Term Seconds</span>
+                <input id="brainwash-term-speed" type="range" min="0.1" max="5.0" step="0.1" value="1.5">
+                <strong id="brainwash-term-speed-value">1.5s</strong>
+              </label>
+
+              <label class="control-card flashcard-brainwash-control" for="brainwash-definition-speed">
+                <span>Definition Seconds</span>
+                <input id="brainwash-definition-speed" type="range" min="0.1" max="5.0" step="0.1" value="2.5">
+                <strong id="brainwash-definition-speed-value">2.5s</strong>
+              </label>
+
+              <label
+                class="control-card flashcard-brainwash-control flashcard-brainwash-typewriter-control"
+                for="brainwash-typewriter-speed"
+              >
+                <span>Typewriter WPM</span>
+                <input id="brainwash-typewriter-speed" type="range" min="80" max="600" step="10" value="220">
+                <strong id="brainwash-typewriter-speed-value">220</strong>
+              </label>
+
+              <label class="control-card flashcard-quiz-control" for="quiz-prompt-side">
+                <span>Quiz Shows First</span>
+                <select id="quiz-prompt-side">
+                  <option value="term">Term</option>
+                  <option value="definition">Definition</option>
+                  <option value="random">Random Side</option>
+                </select>
+              </label>
+
+              <label class="control-card flashcard-quiz-control" for="quiz-guess-seconds">
+                <span>Quiz Guess Seconds</span>
+                <input id="quiz-guess-seconds" type="range" min="2" max="15" value="5">
+                <strong id="quiz-guess-seconds-value">5s</strong>
+              </label>
+            </div>
+
+            <div class="meta-grid flashcard-meta-grid">
+              <div>
+                <span class="meta-label">Cards</span>
+                <strong id="flashcard-count">150</strong>
+              </div>
+              <div>
+                <span class="meta-label">Current Term</span>
+                <strong id="flashcard-current-label">CIA Triad</strong>
+              </div>
+              <div>
+                <span class="meta-label">Purpose</span>
+                <strong class="meta-note">Integrated review</strong>
+              </div>
+              <div>
+                <span class="meta-label">Right Pile</span>
+                <strong id="flashcard-right-count">0</strong>
+              </div>
+              <div>
+                <span class="meta-label">Wrong Pile</span>
+                <strong id="flashcard-wrong-count">0</strong>
+              </div>
+            </div>
+
+            <div class="flashcard-list-wrap">
+              <p class="reader-label">Deck Contents</p>
+              <ul id="flashcard-list" class="flashcard-list"></ul>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="fullscreen-hint" class="fullscreen-hint" aria-live="polite">
+    To exit fullscreen in Chrome, move your cursor to the top and click Exit Full Screen, or press F11.
+  </div>
+
+  <script src="decks/cybersecurity-advanced.js"></script>
+  <script src="decks/bugbounty.js"></script>
+  <script src="decks/redteam.js"></script>
+  <script src="decks/blueteam.js"></script>
+  <script src="decks/activedirectory.js"></script>
+  <script src="decks/azure.js"></script>
+  <script src="decks/ai102.js"></script>
+  <script src="decks/aws.js"></script>
+  <script src="decks/cybersecurity.js"></script>
+  <script src="decks/powershell.js"></script>
+  <script src="decks/linux.js"></script>
+  <script src="decks/soc.js"></script>
+  <script src="decks/python.js"></script>
+  <script src="decks/coae.js"></script>
+  <script src="decks/huntress.js"></script>
+  <script src="decks/currentphase.js"></script>
+  <script src="decks.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
