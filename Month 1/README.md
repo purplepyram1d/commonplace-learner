@@ -49,9 +49,6 @@ This folder is a complete 4-week course for someone who has **never played guita
 - [08 — Practice Log Template](08-Practice-Log-Template.md): track every session
 - [09 — Glossary](09-Glossary.md): every term used in this course
 
-### Setting this up in Notion
-- [NOTION-IMPORT-GUIDE-FOR-MUSE.md](NOTION-IMPORT-GUIDE-FOR-MUSE.md): step-by-step instructions for Muse AI to build this as a structured Notion workspace (databases, relations, views) rather than a pile of pasted pages
-
 ---
 
 ## The daily time commitment
