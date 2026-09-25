@@ -22,6 +22,8 @@ By Day 21 you can:
 ---
 
 ## Day 15 — The map of the song
+**Date:** Fri Oct 9 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min · **Reading:** [05 — Song Guide](05-Song-Guide-Aint-No-Sunshine.md), the whole thing
 
 **Warm-up (12 min)**
@@ -48,6 +50,8 @@ By Day 21 you can:
 ---
 
 ## Day 16 — Whole-song chords & humming the melody
+**Date:** Sat Oct 10 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min
 
 **Warm-up (12 min)**
@@ -77,6 +81,8 @@ By Day 21 you can:
 ---
 
 ## Day 17 — The folk strum & speaking the words
+**Date:** Sun Oct 11 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min · **Reading:** [01 — Guitar Fundamentals §11 (Pattern 4)](01-Guitar-Fundamentals.md), [Song Guide §6](05-Song-Guide-Aint-No-Sunshine.md#6-strumming-arrangement)
 
 **Warm-up (12 min)**
@@ -107,6 +113,8 @@ By Day 21 you can:
 ---
 
 ## Day 18 — First real singing & playing
+**Date:** Mon Oct 12 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min · **Reading:** [04 — Singing While Playing](04-Singing-While-Playing.md) (reread §2 and §5)
 
 **Warm-up (12 min)**
@@ -137,6 +145,8 @@ By Day 21 you can:
 ---
 
 ## Day 19 — The "I know" section
+**Date:** Tue Oct 13 · 🟢 off day: full session
+
 **Time:** ~45 min · **Reading:** [Song Guide §8: the "I know" mini-lesson](05-Song-Guide-Aint-No-Sunshine.md#the-i-know-section-a-mini-lesson)
 
 **Warm-up (12 min)**
@@ -168,6 +178,8 @@ By Day 21 you can:
 ---
 
 ## Day 20 — Quarter notes under the voice
+**Date:** Wed Oct 14 · 🟢 off day: full session
+
 **Time:** ~45 min
 
 **Warm-up (12 min)**
@@ -196,6 +208,8 @@ By Day 21 you can:
 ---
 
 ## Day 21 — Check-in & rest
+**Date:** Thu Oct 15 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~20 min (light)
 
 **Week 3 check-in:**

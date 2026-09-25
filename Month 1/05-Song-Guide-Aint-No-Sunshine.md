@@ -20,20 +20,13 @@ The song is about absence and longing, but it's **understated**. The emotion com
 
 ## 2. The chords
 
-```
-     Am              Em (or Em7)          G                   Dm
-   x02210            022000 / 020000       320003 (easy: xx0003)  xx0231
-  E A D G B e       E A D G B e           E A D G B e          E A D G B e
-  x o       o       o     o o o               o o o            x x o
-  ╒═╤═╤═╤═╤═╕       ╒═╤═╤═╤═╤═╕           ╒═╤═╤═╤═╤═╕          ╒═╤═╤═╤═╤═╕
-  │ │ │ │ ① │       │ │ │ │ │ │           │ │ │ │ │ │          │ │ │ │ │ ①
-  ├─┼─┼─┼─┼─┤       ├─┼─┼─┼─┼─┤           ├─┼─┼─┼─┼─┤          ├─┼─┼─┼─┼─┤
-  │ │ ② ③ │ │       │ ② ③ │ │ │           │ ① │ │ │ │          │ │ │ ② │ │
-  ├─┼─┼─┼─┼─┤       ├─┼─┼─┼─┼─┤           ├─┼─┼─┼─┼─┤          ├─┼─┼─┼─┼─┤
-  │ │ │ │ │ │       │ │ │ │ │ │           ② │ │ │ │ ③          │ │ │ │ ③ │
-  └─┴─┴─┴─┴─┘       └─┴─┴─┴─┴─┘           └─┴─┴─┴─┴─┘          └─┴─┴─┴─┴─┘
-  strum from 5      strum from 6          strum from 6         strum from 4
-```
+| Chord | Fret code | Fingers | Strum from string |
+|---|---|---|---|
+| **Am** | `x02210` | 1, 2, 3 | 5 |
+| **Em** / **Em7** | `022000` / `020000` | 2, 3 / 2 | 6 |
+| **G** (easy) | `320003` (`xx0003`) | 1, 2, 3 (3) | 6 (4) |
+| **Dm** | `xx0231` | 1, 2, 3 | 4 |
+
 (For Em7, leave off finger 3. Full details are in [01 — Guitar Fundamentals](01-Guitar-Fundamentals.md#9-your-four-chords-plus-helpers).)
 
 ### Roles
@@ -197,16 +190,6 @@ The **up-strum on the last "&"** before a chord change is where you "cheat": lif
 
 Instead of strumming the Em–G turnaround, try **picking single bass notes** that walk back to Am. It sounds great and it imitates the bass line's movement under the song.
 
-```
-       Em          G           | Am
-e|-----------------------------|-------
-B|-----------------------------|-1-----
-G|-----------------------------|-2-----
-D|-----------------------------|-2-----
-A|-----------------------------|-0-----
-E|--0-----------3--------------|-------
-    beat 1      beat 3           beat 1
-```
 Pick the low E string open on beat 1 (while holding Em), the low E string at fret 3 on beat 3 (while holding G), then strum Am on beat 1. Bass notes **E → G → A** rise up to "home." Once that's easy, add a strum after each bass note: **bass-strum, bass-strum.**
 
 ---

@@ -72,14 +72,7 @@ Use a piano app (e.g. "Perfect Piano," "Piano"), a keyboard, or search for "5 no
 
 ### Guitar Warm-up A: "Spider" (3 min), Week 1 onward
 The **1-2-3-4 chromatic exercise** builds finger strength, independence and accuracy.
-```
-e|-------------------------1-2-3-4-|
-B|---------------------1-2-3-4-----|
-G|-----------------1-2-3-4---------|
-D|-------------1-2-3-4-------------|
-A|---------1-2-3-4-----------------|
-E|-1-2-3-4-------------------------|
-```
+On each string, starting with the low E (string 6), play frets 1, 2, 3, 4 in order, then move to the next string and repeat, ending on the high e (string 1).
 - One finger per fret: finger 1 on fret 1, 2 on 2, 3 on 3, 4 on 4.
 - Pluck each note once, with a downstroke of the pick.
 - Go slowly. Each note should ring clearly. Press right behind the fret.

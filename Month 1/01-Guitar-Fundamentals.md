@@ -11,8 +11,7 @@ This is the reference manual for the guitar side of the course. You don't need t
 4. [Posture: how to sit and hold the guitar](#4-posture-how-to-sit-and-hold-the-guitar)
 5. [The fretting hand (left hand)](#5-the-fretting-hand-left-hand)
 6. [The strumming hand (right hand)](#6-the-strumming-hand-right-hand)
-7. [Reading chord diagrams](#7-reading-chord-diagrams)
-8. [Reading tab](#8-reading-tab)
+7. [Reading fret codes](#7-reading-fret-codes)
 9. [Your four chords (plus helpers)](#9-your-four-chords-plus-helpers)
 10. [Changing chords](#10-changing-chords)
 11. [Strumming](#11-strumming)
@@ -21,7 +20,7 @@ This is the reference manual for the guitar side of the course. You don't need t
 14. [Looking after the guitar](#14-looking-after-the-guitar)
 15. [Changing strings](#15-changing-strings)
 
-> **Left-handed?** Everything here assumes a right-handed guitar: the left hand frets and the right hand strums. If you play left-handed, swap every "left" and "right." Chord diagrams stay the same from your point of view, because they're drawn as if you're looking at the fretboard.
+> **Left-handed?** Everything here assumes a right-handed guitar: the left hand frets and the right hand strums. If you play left-handed, swap every "left" and "right." Fret codes stay the same: they always run from the thickest string to the thinnest.
 
 ---
 
@@ -144,7 +143,7 @@ Use a strap. Adjust it so the guitar sits at **the same height as when you're si
 
 ## 5. The fretting hand (left hand)
 
-### Finger numbers (used in every chord diagram)
+### Finger numbers
 | Finger | Number |
 |---|---|
 | Index | **1** |
@@ -215,51 +214,17 @@ In Week 1–2 don't worry much about aiming, just strum. By Week 3, try to start
 
 ---
 
-## 7. Reading chord diagrams
+## 7. Reading fret codes
 
-A chord diagram (chord box) is a picture of the fretboard **standing upright, facing you**, as if the guitar were hanging on the wall in front of you.
+Every chord in this course is written as a one-line **fret code**: six characters, one per string, from the low E (string 6) to the high e (string 1).
 
-```
-  E A D G B e      ← string names (6 on the left, 1 on the right)
-  x o     o        ← above the nut: x = don't play; o = play open (unfretted)
-  ╒═╤═╤═╤═╤═╕      ← the nut (thick line)
-  │ │ │ │ ① │      ← fret 1
-  ├─┼─┼─┼─┼─┤
-  │ │ ② ③ │ │      ← fret 2
-  ├─┼─┼─┼─┼─┤
-  │ │ │ │ │ │      ← fret 3
-  └─┴─┴─┴─┴─┘
-```
-- **Vertical lines** = strings. The **left** line is the **low E (string 6)**.
-- **Horizontal lines** = frets. The thick top line is the **nut**.
-- **Numbered dots** = where to put a finger, and which finger (1 = index, 2 = middle, 3 = ring, 4 = pinky).
-- **o** above a string = play it open.
-- **x** above a string = don't play it (or mute it).
-
-The diagram above is **Am**.
-
-In this course chords are also written in a one-line **fret code**, low E → high e:
+- A **number** = press that string at that fret.
+- **0** = play the string open (unfretted).
+- **x** = don't play that string.
 
 `Am = x02210` means: string 6 not played, string 5 open, string 4 fret 2, string 3 fret 2, string 2 fret 1, string 1 open.
 
----
-
-## 8. Reading tab
-
-**Tablature (tab)** shows single notes and riffs. Six lines = six strings, with the **thinnest string (high e) on top** (the opposite of how the guitar looks when you look down at it; it's drawn like the chord diagram rotated). Numbers = which fret to press.
-
-```
-e|-----------------|
-B|-----------------|
-G|-----------------|
-D|-----------------|
-A|--0-------3------|   ← play string 5 open, then string 5 at fret 3
-E|------3---------0|   ← play string 6 at fret 3, ... then string 6 open
-```
-- Read **left to right**.
-- `0` = open string.
-- Numbers stacked vertically = play them at the same time (a chord).
-- Tab usually doesn't show rhythm, so you learn the rhythm by listening.
+Each chord below also lists which finger goes where (1 = index, 2 = middle, 3 = ring, 4 = pinky).
 
 ---
 
@@ -268,17 +233,6 @@ E|------3---------0|   ← play string 6 at fret 3, ... then string 6 open
 These are the only chords in "Ain't No Sunshine." Learn them in this order: **Em → Am → G → Dm.**
 
 ### Em (E minor): `022000` — the easiest chord on the guitar
-```
-  E A D G B e
-  o     o o o
-  ╒═╤═╤═╤═╤═╕
-  │ │ │ │ │ │  1
-  ├─┼─┼─┼─┼─┤
-  │ ② ③ │ │ │  2
-  ├─┼─┼─┼─┼─┤
-  │ │ │ │ │ │  3
-  └─┴─┴─┴─┴─┘
-```
 - **Finger 2** (middle): string 5 (A), fret 2
 - **Finger 3** (ring): string 4 (D), fret 2
 - Strum **all 6 strings**.
@@ -286,17 +240,6 @@ These are the only chords in "Ain't No Sunshine." Learn them in this order: **Em
 - Sound: dark, deep, a bit sad.
 
 ### Am (A minor): `x02210`
-```
-  E A D G B e
-  x o       o
-  ╒═╤═╤═╤═╤═╕
-  │ │ │ │ ① │  1
-  ├─┼─┼─┼─┼─┤
-  │ │ ② ③ │ │  2
-  ├─┼─┼─┼─┼─┤
-  │ │ │ │ │ │  3
-  └─┴─┴─┴─┴─┘
-```
 - **Finger 1** (index): string 2 (B), fret 1
 - **Finger 2** (middle): string 4 (D), fret 2
 - **Finger 3** (ring): string 3 (G), fret 2
@@ -306,17 +249,6 @@ These are the only chords in "Ain't No Sunshine." Learn them in this order: **Em
 - **This is the home chord of "Ain't No Sunshine."** You'll play it more than any other.
 
 ### G (G major): `320003`, full version
-```
-  E A D G B e
-      o o o
-  ╒═╤═╤═╤═╤═╕
-  │ │ │ │ │ │  1
-  ├─┼─┼─┼─┼─┤
-  │ ① │ │ │ │  2
-  ├─┼─┼─┼─┼─┤
-  ② │ │ │ │ ③  3
-  └─┴─┴─┴─┴─┘
-```
 - **Finger 2** (middle): string 6 (low E), fret 3
 - **Finger 1** (index): string 5 (A), fret 2
 - **Finger 3** (ring): string 1 (high e), fret 3
@@ -326,32 +258,10 @@ These are the only chords in "Ain't No Sunshine." Learn them in this order: **Em
 **Alternative G fingering (`320033`, "rock G" / "Cadd9-friendly G"):** 2 on string 6 fret 3, 1 on string 5 fret 2, 3 on string 2 fret 3, 4 on string 1 fret 3. It sounds fuller. Try it in Month 2.
 
 **Easy G (Week 1–2 fallback): `xx0003` or `320003` with fewer strings**
-```
-  E A D G B e
-  x x o o o
-  ╒═╤═╤═╤═╤═╕
-  │ │ │ │ │ │  1
-  ├─┼─┼─┼─┼─┤
-  │ │ │ │ │ │  2
-  ├─┼─┼─┼─┼─┤
-  │ │ │ │ │ ③  3
-  └─┴─┴─┴─┴─┘
-```
 - Just **finger 3** on string 1, fret 3, and strum **strings 4 to 1 only**.
 - It's a real G chord (thinner-sounding). Use it without shame while the full G develops. **Switch to full G by the start of Week 3 if you can.**
 
 ### Dm (D minor): `xx0231`
-```
-  E A D G B e
-  x x o
-  ╒═╤═╤═╤═╤═╕
-  │ │ │ │ │ ①  1
-  ├─┼─┼─┼─┼─┤
-  │ │ │ ② │ │  2
-  ├─┼─┼─┼─┼─┤
-  │ │ │ │ ③ │  3
-  └─┴─┴─┴─┴─┘
-```
 - **Finger 1** (index): string 1 (high e), fret 1
 - **Finger 2** (middle): string 3 (G), fret 2
 - **Finger 3** (ring): string 2 (B), fret 3
@@ -360,17 +270,6 @@ These are the only chords in "Ain't No Sunshine." Learn them in this order: **Em
 - Sound: sad, sweet, dramatic. It's the emotional peak of each verse.
 
 ### Helper: Em7 (E minor 7): `020000`, the one-finger version
-```
-  E A D G B e
-  o   o o o o
-  ╒═╤═╤═╤═╤═╕
-  │ │ │ │ │ │  1
-  ├─┼─┼─┼─┼─┤
-  │ ② │ │ │ │  2
-  ├─┼─┼─┼─┼─┤
-  │ │ │ │ │ │  3
-  └─┴─┴─┴─┴─┘
-```
 - Just finger 2 on string 5, fret 2.
 - Many chord charts for this song use **Em7** instead of Em. It's a softer, jazzier version and it's even easier. Use either one. Em7 is closer to the record's feel.
 

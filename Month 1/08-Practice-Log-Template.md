@@ -2,6 +2,8 @@
 
 A log turns vague "I think I'm getting better" into hard proof, and proof keeps you practicing. Fill one in every session. It takes 2 minutes.
 
+> **In Notion,** you don't need this template: each day's page in the 📅 Daily Plan database has these fields built in (minutes, One-Minute Change scores, hiss, tempo, voice, good / fix tomorrow, pain), and the Daily Plan's chart views track your progress. Use this file if you're logging somewhere else.
+
 ---
 
 ## Daily entry template

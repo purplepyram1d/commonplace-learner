@@ -21,7 +21,7 @@ Find your problem, try the fixes in order, and if nothing works, skip ahead and 
 
 ### "The chord sounds wrong/sour even though my fingers are right"
 - **Tune the guitar.** (This is the answer 80% of the time.)
-- Check the diagram again: right frets, right strings?
+- Check the fret code again: right frets, right strings?
 - Check you aren't strumming strings marked **x** (e.g. the low E on Am, or the low E and A on Dm).
 
 ### "Strumming sounds harsh or clunky"
@@ -186,7 +186,7 @@ The #1 problem, and the most normal. Go back through the [Layering Method](04-Si
 ## General FAQ
 
 **How long should I practice each day?**
-20–45 minutes, depending on the week (see [README](README.md#the-daily-time-commitment)). Consistency matters much more than duration.
+20–45 minutes, depending on the week, capped at 30 on post-shift mornings (see [README](README.md#your-schedule)). Consistency matters much more than duration.
 
 **I missed a day (or three). What do I do?**
 Don't try to "catch up" by doubling the next session. Continue from where you stopped. If you missed 3+ days, repeat the last day you completed. Adding a few days to the month is completely fine: the goal is the song, not the calendar.
@@ -198,7 +198,7 @@ If you're **mostly** there (e.g. G changes at 20/min instead of 30), move on. Yo
 Yes, but don't skip the independence and layering steps. Use your extra time for: the bonus bass walk, the swing feel, learning the song's details by ear, or starting a second song.
 
 **Should I learn to read standard music notation?**
-Not for Month 1. Chord diagrams and tab cover what you need for strumming songs. It's useful later if you're interested.
+Not for Month 1. Chord charts and fret codes cover what you need for strumming songs. It's useful later if you're interested.
 
 **Do I need lessons with a teacher?**
 Not required, but **even one or two lessons** are very valuable for checking posture, hand position, and vocal technique. A teacher can spot problems you can't see. Consider one around Week 2 or 3.

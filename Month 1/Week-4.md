@@ -21,6 +21,8 @@ By Day 28 you can:
 ---
 
 ## Day 22 — Fix the weak spots, add the full strum
+**Date:** Fri Oct 16 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min
 
 **Warm-up (12 min)**
@@ -52,6 +54,8 @@ By Day 28 you can:
 ---
 
 ## Day 23 — Tempo & the whole song with the pattern
+**Date:** Sat Oct 17 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min
 
 **Warm-up (12 min)**
@@ -79,6 +83,8 @@ By Day 28 you can:
 ---
 
 ## Day 24 — Dynamics & feel
+**Date:** Sun Oct 18 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min · **Reading:** [Song Guide §6: dynamics & Level 4](05-Song-Guide-Aint-No-Sunshine.md#6-strumming-arrangement)
 
 **Warm-up (12 min)**
@@ -110,6 +116,8 @@ By Day 28 you can:
 ---
 
 ## Day 25 — Performance skills
+**Date:** Mon Oct 19 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~45 min
 
 **Warm-up (12 min)**
@@ -146,6 +154,8 @@ Practice **just the start**: Start Routine → Line 1 → stop. ×5
 ---
 
 ## Day 26 — Dress rehearsal
+**Date:** Tue Oct 20 · 🟢 off day: full session
+
 **Time:** ~45–60 min
 
 **Warm-up (15 min)**
@@ -169,6 +179,8 @@ Practice **just the start**: Start Routine → Line 1 → stop. ×5
 ---
 
 ## Day 27 — Performance day 🎤
+**Date:** Wed Oct 21 · 🟢 off day: full session
+
 **Time:** ~30 min practice + your performance
 
 **Before the performance**
@@ -192,6 +204,10 @@ Practice **just the start**: Start Routine → Line 1 → stop. ×5
 ---
 
 ## Day 28 — The final recording & reflection 🏁
+**Date:** Tue Oct 27 · 🟢 off day: full session
+
+> Day 28 is dated Tue Oct 27 on purpose, so your final take lands on a rested off day. Thu Oct 22 – Mon Oct 26 are buffer days: catch up on anything you skipped, or play the song through once a day.
+
 **Time:** ~45 min
 
 **The final take**

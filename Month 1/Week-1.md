@@ -24,6 +24,8 @@ Read [00 — Start Here](00-Start-Here-Gear-and-Setup.md) and do its "Before you
 ---
 
 ## Day 1 — Meet your instruments
+**Date:** Fri Sep 25 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~30 min · **Reading:** [01 — Guitar Fundamentals §1–4](01-Guitar-Fundamentals.md), [02 — Voice Fundamentals §1–3](02-Voice-Fundamentals.md)
 
 **Warm-up (5 min)**
@@ -53,6 +55,8 @@ Read [00 — Start Here](00-Start-Here-Gear-and-Setup.md) and do its "Before you
 ---
 
 ## Day 2 — Your first chord: Em
+**Date:** Sat Sep 26 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~30 min · **Reading:** [01 — Guitar Fundamentals §5, 7, 9 (Em)](01-Guitar-Fundamentals.md)
 
 **Warm-up (8 min)**
@@ -80,6 +84,8 @@ Read [00 — Start Here](00-Start-Here-Gear-and-Setup.md) and do its "Before you
 ---
 
 ## Day 3 — Second chord: Am, and your first chord change
+**Date:** Sun Sep 27 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~30 min · **Reading:** [01 — Guitar Fundamentals §9 (Am), §10](01-Guitar-Fundamentals.md)
 
 **Warm-up (10 min)**
@@ -107,6 +113,8 @@ Read [00 — Start Here](00-Start-Here-Gear-and-Setup.md) and do its "Before you
 ---
 
 ## Day 4 — Strumming in time
+**Date:** Mon Sep 28 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~30 min · **Reading:** [01 — Guitar Fundamentals §11–12](01-Guitar-Fundamentals.md), [03 — Music Basics §4](03-Music-Basics-You-Actually-Need.md)
 
 **Warm-up (10 min)**
@@ -134,6 +142,8 @@ Read [00 — Start Here](00-Start-Here-Gear-and-Setup.md) and do its "Before you
 ---
 
 ## Day 5 — First "together": humming over a chord
+**Date:** Tue Sep 29 · 🟢 off day: full session
+
 **Time:** ~30 min · **Reading:** [04 — Singing While Playing §1–2](04-Singing-While-Playing.md)
 
 **Warm-up (10 min)**
@@ -160,6 +170,8 @@ Read [00 — Start Here](00-Start-Here-Gear-and-Setup.md) and do its "Before you
 ---
 
 ## Day 6 — Consolidate & first check-in
+**Date:** Wed Sep 30 · 🟢 off day: full session
+
 **Time:** ~30 min
 
 **Warm-up (10 min)**
@@ -189,6 +201,8 @@ Read [00 — Start Here](00-Start-Here-Gear-and-Setup.md) and do its "Before you
 ---
 
 ## Day 7 — Rest (or a light day)
+**Date:** Thu Oct 1 · 😴 rest day
+
 Your fingers and voice consolidate what you practiced during rest. Choose one:
 
 **Option A: Full rest.** No guitar. Listen to "Ain't No Sunshine" 3–5 times, counting "1 2 3 4" along with it. Read [03 — Music Basics](03-Music-Basics-You-Actually-Need.md) fully.

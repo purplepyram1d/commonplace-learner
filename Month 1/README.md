@@ -51,14 +51,35 @@ This folder is a complete 4-week course for someone who has **never played guita
 
 ---
 
+## Your schedule
+
+Day 1 is **Fri Sep 25, 2026**. You work Wed–Sun nights (10:30pm–7am), so:
+
+- 🌙 **Post-shift mornings (Thu–Mon): 30-minute cap.** Do Setup + Voice Warm-up A, then the day's main blocks in order, and stop at 30 minutes. Move anything unfinished to the next off day. If your voice is rough after no sleep, hum instead of singing full-voice.
+- 🟢 **Off days (Tue/Wed): full session.** The check-ins, dress rehearsal (Day 26) and performance (Day 27) fall on or near these days.
+- **Day 28 is Tue Oct 27**, a rested off day. Thu Oct 22 – Mon Oct 26 are buffer days.
+- Each day in the Week files shows its date and whether it's a 🌙 or 🟢 day.
+
+| Week | Days | Dates |
+|---|---|---|
+| 0 | Day 0 | Thu Sep 24 |
+| 1 | 1–7 | Fri Sep 25 – Thu Oct 1 |
+| 2 | 8–14 | Fri Oct 2 – Thu Oct 8 |
+| 3 | 15–21 | Fri Oct 9 – Thu Oct 15 |
+| 4 | 22–28 | Fri Oct 16 – Tue Oct 27 |
+
+**Your two focus areas: breath control and tempo.** Log your hiss time every time you do the hiss ladder (target: 15 s → 30 s over the month), and always practice strumming with a metronome, logging the tempo you reached (target: 70–76 BPM by Week 4).
+
+---
+
 ## The daily time commitment
 
-| Week | Minimum per day | Ideal per day | Days per week |
-|---|---|---|---|
-| 1 | 20 min | 30 min | 6 (1 rest day) |
-| 2 | 25 min | 35 min | 6 |
-| 3 | 30 min | 45 min | 6 |
-| 4 | 30 min | 45–60 min | 6–7 |
+| Week | 🌙 Post-shift day | 🟢 Off day |
+|---|---|---|
+| 1 | 20–30 min | 30 min |
+| 2 | 25–30 min | 35 min |
+| 3 | 30 min | 45 min |
+| 4 | 30 min | 45–60 min |
 
 **Short daily sessions beat long weekly ones.** Twenty minutes every day is far better than two hours on Sunday. Your fingertips need daily, gentle exposure to toughen up. Your brain also consolidates motor skills during sleep, so every night's sleep after practice is part of the practice.
 

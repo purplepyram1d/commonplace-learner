@@ -114,6 +114,6 @@ The single biggest predictor of whether you practice is **how easy it is to star
 - [ ] Downloaded a tuner app (a backup, and it also works as a pitch checker for your voice)
 - [ ] Found the original recording of "Ain't No Sunshine" on your music app and saved it
 - [ ] Found the lyrics from a licensed source and saved or printed them
-- [ ] Created your practice log (see [08 — Practice Log Template](08-Practice-Log-Template.md))
+- [ ] Set up your practice log (in Notion, each Daily Plan day page is the log; the template is in [08 — Practice Log Template](08-Practice-Log-Template.md))
 - [ ] Recorded a 30-second **"Day 0" video**: say hello, strum the open strings, and sing "Happy Birthday" or any song you know. **Don't skip this.** On Day 28 you'll watch it and be amazed.
 - [ ] Trimmed your fretting-hand fingernails short (see [01 — Guitar Fundamentals](01-Guitar-Fundamentals.md#fingernails))

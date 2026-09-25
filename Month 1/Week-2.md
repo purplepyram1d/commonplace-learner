@@ -23,6 +23,8 @@ By Day 14 you can:
 ---
 
 ## Day 8 — G chord
+**Date:** Fri Oct 2 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~35 min · **Reading:** [01 — Guitar Fundamentals §9 (G)](01-Guitar-Fundamentals.md)
 
 **Warm-up (10 min)**
@@ -51,6 +53,8 @@ By Day 14 you can:
 ---
 
 ## Day 9 — G changes & eighth-note strumming
+**Date:** Sat Oct 3 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~35 min · **Reading:** [01 — Guitar Fundamentals §10, 11 (Pattern 3)](01-Guitar-Fundamentals.md)
 
 **Warm-up (10 min)**
@@ -77,6 +81,8 @@ By Day 14 you can:
 ---
 
 ## Day 10 — Dm chord
+**Date:** Sun Oct 4 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~35 min · **Reading:** [01 — Guitar Fundamentals §9 (Dm)](01-Guitar-Fundamentals.md)
 
 **Warm-up (10 min)**
@@ -104,6 +110,8 @@ By Day 14 you can:
 ---
 
 ## Day 11 — Four-chord day
+**Date:** Mon Oct 5 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~35 min
 
 **Warm-up (10 min)**
@@ -131,6 +139,8 @@ By Day 14 you can:
 ---
 
 ## Day 12 — The rhythm of the song
+**Date:** Tue Oct 6 · 🟢 off day: full session
+
 **Time:** ~35 min · **Reading:** [05 — Song Guide §2–4](05-Song-Guide-Aint-No-Sunshine.md)
 
 **Warm-up (10 min)**
@@ -162,6 +172,8 @@ By Day 14 you can:
 ---
 
 ## Day 13 — Independence training
+**Date:** Wed Oct 7 · 🟢 off day: full session
+
 **Time:** ~35 min · **Reading:** [04 — Singing While Playing §3–5](04-Singing-While-Playing.md)
 
 **Warm-up (10 min)**
@@ -186,6 +198,8 @@ By Day 14 you can:
 ---
 
 ## Day 14 — Review, check-in & rest
+**Date:** Thu Oct 8 · 🌙 post-shift: 30-minute cap
+
 **Time:** ~20 min (light)
 
 **Week 2 check-in:**
